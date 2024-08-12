@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CV Generator</h1>
+        <form id="cv-form">
+            <!-- Personal Information -->
+            <div class="section">
+                <h2>Personal Information</h2>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="address" placeholder="Address">
+                <input type="tel" id="phone" placeholder="Phone Number">
+                <input type="email" id="email" placeholder="Email">
+                <input type="url" id="linkedin" placeholder="LinkedIn Profile">
+                <input type="url" id="website" placeholder="Website">
+                <input type="file" id="photo" accept="image/*">
+            </div>
+            <!-- Education -->
+            <div class="section">
+                <h2>Education</h2>
+                <input type="text" id="degree" placeholder="Degree">
+                <input type="text" id="institution" placeholder="Institution">
+                <input type="text" id="graduation-year" placeholder="Year of Graduation">
+                <input type="text" id="gpa" placeholder="GPA">
+            </div>
+            <!-- Experience -->
+            <div class="section">
+                <h2>Experience</h2>
+                <input type="text" id="job-title" placeholder="Job Title">
+                <input type="text" id="company" placeholder="Company">
+                <input type="text" id="duration" placeholder="Duration">
+                <textarea id="job-description" placeholder="Job Description"></textarea>
+            </div>
+            <!-- Skills -->
+            <div class="section">
+                <h2>Skills</h2>
+                <input type="text" id="skill" placeholder="Skill">
+            </div>
+            <!-- Submit -->
+            <button type="button" id="generate-cv">Generate CV</button>
+        </form>
+
+        <div id="cv-content">
+            <!-- Generated CV will appear here -->
+        </div>
+
+        <button id="download-pdf">Download as PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
